@@ -18,17 +18,17 @@
 好了 上面简单的介绍了TCP与UDP的区别，那么下面 咱们该切入正题了
 
 首先 基本配置
-- 
--   uses-permission android:name="android.permission.INTERNET"
--    android:name="android.permission.WRITE_EXTERNAL_STORAGE" 
--    android:name="android.permission.READ_EXTERNAL_STORAGE" 
--    android:name="android.permission.RECORD_AUDIO"
--     android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"
--   android:name="android.permission.CHANGE_WIFI_STATE"
-- android:name="android.permission.ACCESS_WIFI_STATE"
--     uses-permission android:name="android.permission.CAMERA" 
--     
-
+ ``` 
+ <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_FORMAT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    ``` 
 链接网络(局域网) 、SD卡写入写出、照相机等。
 
 此demo只有一个APP即可 即是客户端也是服务端
