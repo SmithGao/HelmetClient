@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">智能头盔客户端</string>
+    <string name="local_upload_text">本地视频</string>
+    <string name="camera_upload_text">拍摄视频</string>
+    <string name="image_upload_text">本地图片</string>
+    <string name="popup_title">请选择上传类型</string>
+</resources>

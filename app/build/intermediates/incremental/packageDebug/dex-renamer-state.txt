@@ -1,0 +1,7 @@
+#Fri Dec 09 16:28:44 CST 2016
+base.0=/Users/SuperMe/HelmetClient/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_f3c70498d47aaa473f7d0204243ab746e8b905a0
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=/Users/SuperMe/HelmetClient/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_ab8bb73af7defc5329e390cb5f0fe7253d0a0e2f/classes.dex
+base.1=/Users/SuperMe/HelmetClient/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_ab8bb73af7defc5329e390cb5f0fe7253d0a0e2f
+file.0=/Users/SuperMe/HelmetClient/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_f3c70498d47aaa473f7d0204243ab746e8b905a0/classes.dex

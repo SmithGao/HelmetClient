@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/SuperMe/HelmetClient/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="60c4a25e68774408fc122b9318f2264a87a82ae5">
+        <dex dex="/Users/SuperMe/HelmetClient/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_ab8bb73af7defc5329e390cb5f0fe7253d0a0e2f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/SuperMe/HelmetClient/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="/Users/SuperMe/HelmetClient/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-23.4.0_1d7482791452c580e2437369cc2f5bfffe2f5c6f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/SuperMe/HelmetClient/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="e3885783ff8926ed9e2fdcd16816c2e1e73e7aee">
+        <dex dex="/Users/SuperMe/HelmetClient/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-23.2.1_c5d84eb19a981ff5f0711a02b190ecbf5457a165/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/SuperMe/AndroidStudioProjects/HelmetClient/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="/Users/SuperMe/AndroidStudioProjects/HelmetClient/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-23.4.0_ddac831acca80657e68c11f24d63a57589fa5bfd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/SuperMe/AndroidStudioProjects/HelmetClient/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="/Users/SuperMe/AndroidStudioProjects/HelmetClient/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-23.4.0_290b40c9a7aef8158e2afbcf4f4b5872e875ed63/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/SuperMe/AndroidStudioProjects/HelmetClient/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="551afaa06d9750517e1ae82342031d31e7f2c12f">
+        <dex dex="/Users/SuperMe/AndroidStudioProjects/HelmetClient/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_a422787065e955ed87afa12dfd72fe900fbf65f3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/SuperMe/HelmetClient/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="/Users/SuperMe/HelmetClient/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-23.4.0_5bdaf2f9d469fd839483f5cb050f5ef1c46f21c3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/SuperMe/HelmetClient/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="d300081acf06f8f148bc1352b959f5dc923c6efb">
+        <dex dex="/Users/SuperMe/HelmetClient/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_f3c70498d47aaa473f7d0204243ab746e8b905a0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/SuperMe/AndroidStudioProjects/HelmetClient/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="493f10bd9a2d31306c1160e377fe5b88fa02b34f">
+        <dex dex="/Users/SuperMe/AndroidStudioProjects/HelmetClient/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_bf5bd57eeca8d4a8de0fcae791398808584497e0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/SuperMe/AndroidStudioProjects/HelmetClient/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/libs/internal_impl-23.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="/Users/SuperMe/AndroidStudioProjects/HelmetClient/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.4.0_805b8dde4b028558414dbbc630ac169d63e16264/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/SuperMe/AndroidStudioProjects/HelmetClient/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="/Users/SuperMe/AndroidStudioProjects/HelmetClient/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-23.4.0_a7b2aa04484e6ee3ed1f0e48d7d7f7b290288088/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/SuperMe/Documents/android/android-sdk-macosx/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="/Users/SuperMe/AndroidStudioProjects/HelmetClient/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.4.0_b4f1f2a7618bcafb967a5811f5c8691a058f8a6d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/SuperMe/HelmetClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="/Users/SuperMe/HelmetClient/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-23.4.0_dbfbec3c7d748512841a4ed5baf61c7d4b72c1e8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/SuperMe/AndroidStudioProjects/HelmetClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="/Users/SuperMe/AndroidStudioProjects/HelmetClient/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-23.4.0_b664b37cea743efe7f5d16b9c08e85e2610e59e7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/SuperMe/AndroidStudioProjects/HelmetClient/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="e3885783ff8926ed9e2fdcd16816c2e1e73e7aee">
+        <dex dex="/Users/SuperMe/AndroidStudioProjects/HelmetClient/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-23.2.1_7481a36b3ddc7c41a44d9e571414c94e361fbd80/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/SuperMe/HelmetClient/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="/Users/SuperMe/HelmetClient/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-23.4.0_3c9bdbec4abfb04692d54b293d3f8ee3ec691527/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/SuperMe/HelmetClient/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/libs/internal_impl-23.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="/Users/SuperMe/HelmetClient/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.4.0_a79ffac9aaf9d204b5beecb044be21f73bb8b6e5/classes.dex" />
+    </item>
+
+</items>

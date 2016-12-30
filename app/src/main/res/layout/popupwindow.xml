@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="300dip"
+              android:layout_height="wrap_content"
+              android:background="@drawable/popupwindow_bg"
+              android:orientation="vertical"
+              android:paddingBottom="15dip">
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:gravity="center"
+        android:text="@string/popup_title"
+        android:textColor="#FFFFFF"
+        android:textSize="8pt"
+        android:typeface="monospace"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/btn_tupian_upload"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/select_gray_or_white"
+            android:gravity="center_horizontal"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginBottom="5dp"
+            android:text="本地文件"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/btn_bendi_upload"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/select_gray_or_white"
+            android:gravity="center_horizontal"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="本地视频"
+            android:layout_marginBottom="5dp"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/btn_paishe_upload"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/select_gray_or_white"
+            android:gravity="center_horizontal"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="文件拍摄"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    api-level="23"
+    density="xxhdpi"
+    format="8"
+    plugin-version="2.2.0"
+    timestamp="35816982666033"
+    token="-8533057146355999486"
+    verifier="FULL_BUILD_REQUESTED" >
+
+    <task
+        name="javac"
+        duration="518" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="241" />
+    <task
+        name="verifier"
+        duration="30" />
+
+    <artifact
+        location="/Users/SuperMe/HelmetClient/app/build/outputs/apk/app-debug.apk"
+        type="MAIN" />
+
+    <build
+        timestamp="35816982666033"
+        verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="/Users/SuperMe/HelmetClient/app/build/outputs/apk/app-debug.apk"
+            type="MAIN" />
+    </build>
+
+</instant-run>
