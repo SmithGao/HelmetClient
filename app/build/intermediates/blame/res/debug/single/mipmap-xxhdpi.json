@@ -1,6 +1,10 @@
 [
     {
-        "merged": "/Users/SuperMe/HelmetClient/app/build/intermediates/res/merged/debug/mipmap-xxhdpi/ic_launcher.png",
-        "source": "/Users/SuperMe/HelmetClient/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+        "merged": "/Users/SuperMe/AndroidStudioProjects/HelmetClient_智能头盔/app/build/intermediates/res/merged/debug/mipmap-xxhdpi/ic_launcher.png",
+        "source": "/Users/SuperMe/AndroidStudioProjects/HelmetClient_智能头盔/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/SuperMe/AndroidStudioProjects/HelmetClient/app/build/intermediates/res/merged/debug/mipmap-xxhdpi/ic_launcher.png",
+        "source": "/Users/SuperMe/AndroidStudioProjects/HelmetClient/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
     }
 ]

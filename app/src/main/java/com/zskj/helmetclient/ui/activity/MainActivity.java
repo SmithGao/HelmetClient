@@ -15,7 +15,6 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.zskj.helmetclient.R;
-import com.zskj.helmetclient.app.Constant;
 import com.zskj.helmetclient.bean.Msg;
 import com.zskj.helmetclient.bean.User;
 import com.zskj.helmetclient.ui.adapter.AllUserRecAdapter;
@@ -28,15 +27,14 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.zskj.helmetclient.util.Tools.INTENT;
-import static com.zskj.helmetclient.util.Tools.PROGRESS_COL;
-import static com.zskj.helmetclient.util.Tools.PROGRESS_FLUSH;
+import static com.zskj.helmetclient.util.Tools.getLocalHostIp;
 
 public class MainActivity extends SimpleBaseActivity {
 	private RecyclerView rec_view;
 	public List<User> userList = null;
 	public List<User> adapterList = new ArrayList<>();
 	public static User user;
+	public static User user1 = null;
 	private AllUserRecAdapter recAdapter;
 	private Tools tools = null;
 	public boolean isPaused = false;
@@ -130,9 +128,9 @@ public class MainActivity extends SimpleBaseActivity {
 	private void init() {
 		userList = new ArrayList<>();
 		userList.clear();
-		user = new User(Build.MODEL, Tools.getLocalHostIp(), System.currentTimeMillis());
+		user = new User(Build.MODEL, getLocalHostIp(), System.currentTimeMillis());
 		userList.add(user);
-		User me = new User("自己" + Build.MODEL, Tools.getLocalHostIp(), System.currentTimeMillis());
+		User me = new User("自己" + Build.MODEL, getLocalHostIp(), System.currentTimeMillis());
 		adapterList.clear();
 		adapterList.add(me);
 		recAdapter = new AllUserRecAdapter(adapterList, context);
@@ -147,6 +145,8 @@ public class MainActivity extends SimpleBaseActivity {
 			public void onitemClick(View view, int position) {
 				if (position == 0)
 					return;
+				user1 = userList.get(position);
+				openConnectActivity(user1);
 				Intent intent = new Intent(MainActivity.this, ConnectActivity.class);
 				intent.putExtra("person", userList.get(position));//需要连接的用户
 				intent.putExtra("me", user);//自己
@@ -154,6 +154,13 @@ public class MainActivity extends SimpleBaseActivity {
 			}
 		});
 
+	}
+
+	//打开所连接客户端的页面
+	private void openConnectActivity(User user1) {
+		Msg msg = new Msg(user.getName(), user.getIp(), user1.getName(), user1.getIp(),
+				Tools.CMD_OPEN_CONNECT_ACTIVITY, user);
+		tools.sendMsg(msg);
 	}
 
 	@Override
@@ -207,29 +214,23 @@ public class MainActivity extends SimpleBaseActivity {
 					break;
 				case Tools.DESTROYUSER://删除用户
 					int i = (Integer) msg.obj;
-					LogUtil.printI("YWQ", "删除用户");
+					LogUtil.printI("YWQ", "删除用户" + userList.get(i).getIp());
 					userList.remove(i);
 					adapterList.remove(i);
 					recAdapter.notifyDataSetChanged();
 					break;
-				case Tools.SHOW://用户上线
-					Toast.makeText(MainActivity.this, (String) msg.obj,
-							Toast.LENGTH_SHORT).show();
-					break;
-				case PROGRESS_FLUSH:
-					int i0 = (int) ((Tools.sendProgress / (fileSize)) * 100);
-					LogUtil.defLog(i0 + "");
-					proDia.setProgress(i0);
-					break;
-				case PROGRESS_COL:// 关闭进度条
-					proDia.dismiss();
-					break;
-				case INTENT:
-					//接收成功 跳转
-					String file = getExternalFilesDir(null) + Tools.newfileName;
-					Intent intent = new Intent(MainActivity.this, ShowImageActivity.class);
-					intent.putExtra(Constant.FILENAME, file);
-					startActivity(intent);
+				case Tools.CMD_OPEN_CONNECT_ACTIVITY:
+					User user2 = (User) msg.obj;
+					String otherIp = Tools.otherIp;
+					LogUtil.printI("YWQ", "本机的IP地址:" + getLocalHostIp() + "获得的IP地址:" + otherIp);
+
+					if (getLocalHostIp().equals(otherIp)) {
+						LogUtil.printI("YWQ", "跳转条件成立");
+						Intent intent1 = new Intent(MainActivity.this, ConnectActivity.class);
+						intent1.putExtra("person", user2);//需要连接的用户
+						intent1.putExtra("me", user);//自己
+						startActivity(intent1);
+					}
 					break;
 				default:
 					break;

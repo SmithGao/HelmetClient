@@ -34,7 +34,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.zskj.helmetclient.ui.activity.ConnectActivity" />
+        <activity
+            android:name="com.zskj.helmetclient.ui.activity.ConnectActivity"
+            android:launchMode="singleTask" />
         <activity
             android:name="com.zskj.helmetclient.ui.activity.ShowImageActivity"
             android:launchMode="singleTask" />

@@ -30,6 +30,7 @@ public class FileTcpServer {
 				creatServer();
 			} catch (Exception e) {
 				e.printStackTrace();
+				//
 			}
 		}
 	}
@@ -54,43 +55,6 @@ public class FileTcpServer {
 		BufferedInputStream is = new BufferedInputStream(s.getInputStream()); // 读进
 		BufferedOutputStream os = new BufferedOutputStream(new FileOutputStream(file));// 写出
 
-		/////----------------------------------------------------------
-//		File filesDir = ConnectB.getFilesDir();
-//		File file = new File(filesDir ,filename);
-//		if (!file.exists()) {
-//			file.mkdir();
-//			file.createNewFile();
-//		}
-//		try {
-//			BufferedInputStream is = new BufferedInputStream(s.getInputStream()); // 读进
-//			BufferedOutputStream os = new BufferedOutputStream(new FileOutputStream(file));// 写出
-//			is.close();
-//			os.flush();
-//			os.close();
-//			Tools.Tips(Tools.INTENT, ConnectB.getFilesDir().getAbsolutePath());
-//
-//		} catch (Exception e) {
-//			e.printStackTrace();
-//		}
-
-
-		/////----------------------------------------------------------
-
-//		File filesDir = ConnectB.getFilesDir();
-//		if (!filesDir.exists()) {
-//			filesDir.mkdirs();
-//		}
-//		String name = "/" + Tools.newfileName;
-//		File file = new File(filesDir + name);
-//		LogUtil.defLog("存数据--" + file.getAbsolutePath());
-//		if (!file.exists()) {
-//			file.createNewFile();
-//		}
-//		BufferedInputStream is = new BufferedInputStream(s.getInputStream()); // 读进
-//		BufferedOutputStream os = new BufferedOutputStream(new FileOutputStream(file));// 写出
-//
-
-
 
 		Thread.sleep(1000);
 		byte[] data = new byte[Tools.byteSize];// 每次读取的字节数
@@ -103,9 +67,9 @@ public class FileTcpServer {
 		is.close();
 		os.flush();
 		os.close();
-		Tools.TipsMain(Tools.INTENT, connectB.getFilesDir().getAbsolutePath());
 		s.close();
-		Tools.TipsMain(Tools.SHOW, "接收完成" + Tools.newfileName);
+		Tools.TipsConnect(Tools.INTENT, connectB.getFilesDir().getAbsolutePath());
+		Tools.TipsConnect(Tools.SHOW, "接收文件完毕");
 	}
 
 }

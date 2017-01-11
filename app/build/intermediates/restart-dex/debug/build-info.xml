@@ -1,36 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    api-level="23"
+    api-level="22"
     density="xxhdpi"
     format="8"
     plugin-version="2.2.0"
-    timestamp="35816982666033"
-    token="-8533057146355999486"
-    verifier="FULL_BUILD_REQUESTED" >
+    timestamp="17152231582696"
+    token="7724781150349511501"
+    verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="518" />
+        duration="333" />
     <task
         name="instant-run-dex"
-        duration="0" />
+        duration="48" />
     <task
         name="instant-run-transform"
-        duration="241" />
+        duration="89" />
     <task
         name="verifier"
-        duration="30" />
+        duration="7" />
 
     <artifact
-        location="/Users/SuperMe/HelmetClient/app/build/outputs/apk/app-debug.apk"
-        type="MAIN" />
+        location="/Users/SuperMe/AndroidStudioProjects/HelmetClient_智能头盔/app/build/intermediates/reload-dex/debug/classes.dex"
+        type="RELOAD_DEX" />
 
     <build
-        timestamp="35816982666033"
+        timestamp="15718427951346"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="/Users/SuperMe/HelmetClient/app/build/outputs/apk/app-debug.apk"
+            location="/Users/SuperMe/AndroidStudioProjects/HelmetClient_智能头盔/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
+    </build>
+    <build
+        timestamp="16499144050212"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/Users/SuperMe/AndroidStudioProjects/HelmetClient_智能头盔/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_1/classes.dex"
+            type="DEX" />
+        <artifact
+            location="/Users/SuperMe/AndroidStudioProjects/HelmetClient_智能头盔/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7/classes.dex"
+            type="DEX" />
+    </build>
+    <build
+        timestamp="17068130197809"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/Users/SuperMe/AndroidStudioProjects/HelmetClient_智能头盔/app/build/intermediates/builds/debug/17068130197809/classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="17152231582696"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/Users/SuperMe/AndroidStudioProjects/HelmetClient_智能头盔/app/build/intermediates/reload-dex/debug/classes.dex"
+            type="RELOAD_DEX" />
     </build>
 
 </instant-run>

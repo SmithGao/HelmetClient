@@ -34,9 +34,12 @@ import com.zskj.helmetclient.bean.User;
 import com.zskj.helmetclient.util.FileTcpServer;
 import com.zskj.helmetclient.util.LogUtil;
 import com.zskj.helmetclient.util.Tools;
+import com.zskj.helmetclient.util.UriUtils;
 
 import java.io.File;
 import java.math.BigDecimal;
+
+import static com.zskj.helmetclient.util.Tools.INTENT;
 
 /**
  * 作者：yangwenquan on 2016/11/25
@@ -180,7 +183,6 @@ public class ConnectActivity extends SimpleBaseActivity {
 	}
 
 
-
 	// 发送文件
 	private void SendFile(String UriFile) {
 		// Tools.CMD_FILEREQUEST, 特别标注 发送文件
@@ -196,10 +198,13 @@ public class ConnectActivity extends SimpleBaseActivity {
 
 	//获取视频文件的路径
 	protected String getVideoPath(Uri uri) {
-		Cursor cursor = getContentResolver().query(uri, null, null, null, null);
-		if (cursor.moveToFirst()) {
-			mediaFilePath = cursor.getString(cursor.getColumnIndex("_data"));
-		}
+//		Cursor cursor = this.getContentResolver().query(uri, null, null, null, null);
+//		if (cursor != null) {
+//			if (cursor.moveToFirst()) {
+//				mediaFilePath = cursor.getString(cursor.getColumnIndex(MediaStore.Images.Media.DATA));
+		mediaFilePath = UriUtils.getPath(this, uri);
+//			}
+//		}
 		return mediaFilePath;
 	}
 
@@ -220,9 +225,12 @@ public class ConnectActivity extends SimpleBaseActivity {
 			if (data != null && data.getData() != null) {
 				// 得到视频的全路径
 				Uri videoUri = data.getData();
-				choosePath = getVideoPath(videoUri);
-				LogUtil.printI(Constant.APP_TAG, choosePath + "mmm");
-				SendFile(choosePath);
+				if (videoUri.getScheme().startsWith("content")) {
+					choosePath = getVideoPath(videoUri);
+					LogUtil.printI(Constant.APP_TAG, choosePath + "mmm");
+					SendFile(choosePath);
+				}
+
 			}
 		} else if (requestCode == PHOTO_CAMERA) {
 			if (Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {
@@ -348,14 +356,25 @@ public class ConnectActivity extends SimpleBaseActivity {
 					break;
 				case Tools.PROGRESS_COL:// 关闭进度条
 					proDia.dismiss();
-					//发动成功 跳转
+
+					//次处为发送方发送 完毕后 跳转
+					String file = Tools.ConnectB.choosePath;
 					Intent intent = new Intent(ConnectActivity.this, ShowImageActivity.class);
-					intent.putExtra(Constant.FILENAME, Tools.ConnectB.choosePath);
+					intent.putExtra(Constant.FILENAME, file);
 					startActivity(intent);
+
+					break;
+				case INTENT:
+
+					//此处为接收方 接收完毕 跳转
+					String file2 = getExternalFilesDir(null) + Tools.newfileName;
+					Intent intent2 = new Intent(ConnectActivity.this, ShowImageActivity.class);
+					intent2.putExtra(Constant.FILENAME, file2);
+					startActivity(intent2);
+
 					break;
 				case Tools.CMD_FILEREQUEST:
-					// 、、、、j接受文件请求
-					LogUtil.defLog("\t\t\t\t\t// 、、、、j接受文件请求\n");
+					// 接受文件请求
 					receiveFile((Msg) msg.obj);
 					break;
 
@@ -408,7 +427,7 @@ public class ConnectActivity extends SimpleBaseActivity {
 
 							fileProgress();// 启动进度条线程
 
-							// 发送消息 让对方开始发送文件     ------- 出问题出现一
+							// 发送消息 让对方开始发送文件
 							Msg msg = new Msg(MainActivity.user.getName(), MainActivity.user.getIp(), m.getSendUserName(), m.getSendUserIp(),
 									Tools.CMD_FILEACCEPT, null);
 							LogUtil.defLog("发送消息 让对方开始发送文件" + msg);

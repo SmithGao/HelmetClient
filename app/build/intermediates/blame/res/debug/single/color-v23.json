@@ -1,6 +1,10 @@
 [
     {
-        "merged": "/Users/SuperMe/HelmetClient/app/build/intermediates/res/merged/debug/color-v23/abc_color_highlight_material.xml",
-        "source": "/Users/SuperMe/HelmetClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/color-v23/abc_color_highlight_material.xml"
+        "merged": "/Users/SuperMe/AndroidStudioProjects/HelmetClient_智能头盔/app/build/intermediates/res/merged/debug/color-v23/abc_color_highlight_material.xml",
+        "source": "/Users/SuperMe/AndroidStudioProjects/HelmetClient_智能头盔/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/color-v23/abc_color_highlight_material.xml"
+    },
+    {
+        "merged": "/Users/SuperMe/AndroidStudioProjects/HelmetClient/app/build/intermediates/res/merged/debug/color-v23/abc_color_highlight_material.xml",
+        "source": "/Users/SuperMe/AndroidStudioProjects/HelmetClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/color-v23/abc_color_highlight_material.xml"
     }
 ]

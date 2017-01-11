@@ -19,7 +19,6 @@ public class Msg implements Serializable {
     }
 
     public Msg( String sendUserName, String sendUserIp, String receiveUserName, String receiveUserIp, int msgType, Object body) {
-        this.date = date;
         this.sendUserName = sendUserName;
         this.sendUserIp = sendUserIp;
         this.receiveUserName = receiveUserName;
